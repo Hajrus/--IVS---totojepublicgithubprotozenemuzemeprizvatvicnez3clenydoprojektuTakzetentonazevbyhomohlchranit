@@ -1,7 +1,4 @@
 # Backend
-
-## build
-  - obsahuje přeložené binárky. Jsou zahrnuty v gitignore.
-
-## src
-  - obsahuje zdrojové soubory frontendu.
+  - obsahuje zdrojové soubory backendu.
+  
+ Překlad probíhá do složky build, která je zahrnuta v gitignore.
