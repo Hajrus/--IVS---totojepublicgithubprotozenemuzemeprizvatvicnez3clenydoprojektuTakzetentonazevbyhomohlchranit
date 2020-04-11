@@ -1,3 +1,9 @@
 # Frontend
 
-Stránka projektu, zde se nachází zdrojové soubory k front endu.
+Stránka projektu.
+
+## build
+  - obsahuje přeložené binárky. Jsou zahrnuty v gitignore.
+
+## src
+  - obsahuje zdrojové soubory frontendu.
