@@ -3,7 +3,7 @@
 
 Stránka githubu pro projekt IVS
 
-TEAM: # KORONAVIRUS DESTROYED
+TEAM:  **KORONAVIRUS DESTROYED**
 
 Členové:
 
