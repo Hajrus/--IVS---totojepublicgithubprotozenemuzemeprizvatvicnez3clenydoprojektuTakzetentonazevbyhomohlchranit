@@ -1,11 +1,12 @@
-#include "ivs.h"
+#include "mainwindow.h"
+
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    ivs w;
+    MainWindow w;
+    w.setWindowTitle("Kalkulačka");
     w.show();
-
     return a.exec();
 }

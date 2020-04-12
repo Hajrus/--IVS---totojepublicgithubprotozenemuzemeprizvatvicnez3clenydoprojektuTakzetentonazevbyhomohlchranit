@@ -1,2 +1,7 @@
 src/frontend/build/
 src/backend/build/
+.qmake.stash
+
+qMakefile
+
+build/
