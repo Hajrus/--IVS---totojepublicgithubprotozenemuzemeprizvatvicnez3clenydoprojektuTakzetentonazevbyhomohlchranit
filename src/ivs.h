@@ -68,9 +68,9 @@ namespace IVS{
     };
     class Operator{
         public:
-            explicit Operator();
-            explicit Operator(Operand* o1, Operand* o2);
-            explicit Operator(Operand* o1);
+            virtual Operator();
+            virtual Operator(Operand* o1, Operand* o2);
+            virtual Operator(Operand* o1);
             virtual ~Operator();
 
             Operand* GetResult();
