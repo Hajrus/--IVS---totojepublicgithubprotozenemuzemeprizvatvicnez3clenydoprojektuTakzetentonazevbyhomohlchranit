@@ -19,11 +19,7 @@ private:
     Ui::MainWindow *ui;
 
 private slots:
-    void NmbrPress();
-    void OperationPress();
-    void ClearPress();
-    void EqualPress();
-    void FactPress();
-    void BackPress();
+    void ButtonPress();
+
 };
 #endif // MAINWINDOW_H

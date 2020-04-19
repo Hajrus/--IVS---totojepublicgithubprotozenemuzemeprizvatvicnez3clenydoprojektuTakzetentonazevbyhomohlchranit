@@ -165,7 +165,7 @@
 }</string>
        </property>
        <property name="text">
-        <string>sqrt</string>
+        <string>√</string>
        </property>
       </widget>
      </item>
