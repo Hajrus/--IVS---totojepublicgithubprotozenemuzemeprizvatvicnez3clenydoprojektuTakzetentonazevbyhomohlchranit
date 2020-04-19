@@ -82,6 +82,7 @@ Operator::Operator(Operand* o1){
     this->_o1 = o1;
     this->execute();
 }
+Operator::~Operator(){}
 Operand* Operator::GetResult(){
     return this->_result;
 }
@@ -91,6 +92,7 @@ Calculator::Calculator(){
     this->_o1 = new Operand();
     this->_o2 = new Operand();
 }
+void Operator::execute(){}
 void Calculator::Press(CalculatorButton button){
     if(this->_state == InsertFirstOperand){
         if(isConstant(button)){

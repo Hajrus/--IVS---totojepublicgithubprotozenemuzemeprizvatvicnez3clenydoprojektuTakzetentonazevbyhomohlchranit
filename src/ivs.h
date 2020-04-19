@@ -71,10 +71,11 @@ namespace IVS{
             explicit Operator();
             explicit Operator(Operand* o1, Operand* o2);
             explicit Operator(Operand* o1);
-            
+            virtual ~Operator();
+
             Operand* GetResult();
         private:
-            virtual void execute();    
+            virtual void execute();   
         protected:
             Operand* _result;
             Operand* _o1;
