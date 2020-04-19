@@ -7,42 +7,42 @@ namespace IVS{
     class Plus : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Minus : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Multiply : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Divide : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Power : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Sqrt : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Mod : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
     class Factorial : public Operator{
         using Operator::Operator;
         public:
-            void execute() override; 
+            void execute(); 
     };
 };
 
