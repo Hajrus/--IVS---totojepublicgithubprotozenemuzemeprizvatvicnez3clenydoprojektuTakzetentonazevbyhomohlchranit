@@ -74,8 +74,7 @@ namespace IVS{
             virtual ~Operator();
 
             Operand* GetResult();
-        private:
-            virtual void execute();   
+            virtual void execute();  
         protected:
             Operand* _result;
             Operand* _o1;
