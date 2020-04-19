@@ -4,42 +4,42 @@
 #include "ivs.h"
 
 namespace IVS{
-    class Plus : private Operator{
+    class Plus : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Minus : private Operator{
+    class Minus : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Multiply : private Operator{
+    class Multiply : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Divide : private Operator{
+    class Divide : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Power : private Operator{
+    class Power : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Sqrt : private Operator{
+    class Sqrt : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Mod : private Operator{
+    class Mod : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
     };
-    class Factorial : private Operator{
+    class Factorial : public, private Operator{
         using Operator::Operator;
         private:
             void execute() override; 
