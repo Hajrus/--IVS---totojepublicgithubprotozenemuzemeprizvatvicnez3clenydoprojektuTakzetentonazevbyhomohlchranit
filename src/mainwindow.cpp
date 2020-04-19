@@ -30,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     //nastaveni displejů
-    ui->textBrowser->setText("");
+    ui->lineEdit_2->setText("");
     ui->lineEdit->setText(QString::number(outputVal));
     //inicializace číselníku
     QString butName;
@@ -59,7 +59,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->ButtonFact, SIGNAL(released()), this, SLOT(FactPress()));
     connect(ui->ButtonEq, SIGNAL(released()), this, SLOT(EqualPress()));
     connect(ui->ButtonClear, SIGNAL(released()), this, SLOT(ClearPress()));
-    connect(ui->ButtonBack, SIGNAL(released()), this, SLOT(BackPress()));
+    connect(ui->ButtonDel, SIGNAL(released()), this, SLOT(BackPress()));
 
 }
 
@@ -116,7 +116,7 @@ void MainWindow::NmbrPress()
             secondVal = newNumber;
         }
     }
-    ui->textBrowser->setText(QString::number(newNumber));
+    ui->lineEdit_2->setText(QString::number(newNumber));
 
 }
 
