@@ -17,9 +17,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    ivs.cpp \
+    operator.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    ivs.h \
+    operator.h \
     mainwindow.h
 
 FORMS += \
