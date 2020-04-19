@@ -76,13 +76,16 @@ Operator::Operator(){}
 Operator::Operator(Operand* o1, Operand* o2){
     this->_o1 = o1;
     this->_o2 = o2;
+    this->_result = new Operand();
     this->execute();
 }
 Operator::Operator(Operand* o1){
     this->_o1 = o1;
     this->execute();
 }
-Operator::~Operator(){}
+Operator::~Operator(){
+    delete this->_result;
+}
 Operand* Operator::GetResult(){
     return this->_result;
 }
