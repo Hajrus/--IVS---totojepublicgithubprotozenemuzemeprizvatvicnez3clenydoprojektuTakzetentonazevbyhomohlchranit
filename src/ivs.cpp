@@ -171,7 +171,6 @@ void Calculator::Press(CalculatorButton button){
                     catch(CalculatorException e){
                         e.Print();
                         this->_state = Error;
-                        this->_screenBuffer = "Error";
                         this->_o2 = new Operand();
                     }
                 }  
@@ -196,7 +195,6 @@ void Calculator::Press(CalculatorButton button){
                 catch(CalculatorException e){
                     e.Print();
                     this->_state = Error;
-                    this->_screenBuffer = "Error";
                     this->_o2 = new Operand();
                 }
                 
@@ -213,7 +211,7 @@ void Calculator::Press(CalculatorButton button){
     }
     else if(this->_state == Error){
         this->clear();
-        this->_screenBuffer = "Error";
+
         this->_state = Startup;
     }
     this->redrawBuffers();
@@ -289,6 +287,10 @@ void Calculator::redrawBuffers(){
     if(this->_state == InsertFirstOperand ||  this->_state == Startup){
         this->_historyBuffer = "";
         this->_screenBuffer = this->_o1->ToString();
+    }
+    if(this->_state == Error){
+        this->_historyBuffer = "";
+        this->_screenBuffer = "Error";
     }
     else{
         std::string operatorStr(1, (char)this->_actualOperator);
