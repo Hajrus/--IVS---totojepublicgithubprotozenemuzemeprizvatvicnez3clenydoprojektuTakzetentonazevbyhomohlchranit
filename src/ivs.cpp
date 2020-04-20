@@ -138,6 +138,8 @@ void Calculator::Press(CalculatorButton button){
         else if(isFunction(button)){
             if(button == del){
                  this->_o1->Erase();
+                 if(this->_o1->ToString().empty())
+                    this->_state = Startup;
             }
             else if(button == CalculatorButton::clear){
                 this->clear();
