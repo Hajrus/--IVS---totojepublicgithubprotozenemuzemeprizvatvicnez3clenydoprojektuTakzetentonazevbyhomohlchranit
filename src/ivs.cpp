@@ -250,7 +250,7 @@ void Calculator::execute(){
         this->_o1 = (new Minus(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == divide)
         this->_o1 = (new Divide(this->_o1, this->_o2))->execute();
-    else if(this->_actualOperator == divide)
+    else if(this->_actualOperator == power)
         this->_o1 = (new Power(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == mod)
         this->_o1 = (new Mod(this->_o1, this->_o2))->execute();
