@@ -168,7 +168,7 @@ void Calculator::Press(CalculatorButton button){
         else if(isFunction(button)){
             if(button == equals){
                 execute();
-                this->_state = Startup;
+                this->_state = InsertFirstOperand;
                 this->_o2 = new Operand();
             }
             else if(button == CalculatorButton::clear){
