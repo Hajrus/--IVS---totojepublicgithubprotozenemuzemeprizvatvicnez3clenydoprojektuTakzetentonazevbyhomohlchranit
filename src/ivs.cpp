@@ -169,7 +169,6 @@ void Calculator::Press(CalculatorButton button){
             if(button == equals){
                 execute();
                 this->_state = Startup;
-                delete this->_o2;
                 this->_o2 = new Operand();
             }
             else if(button == CalculatorButton::clear){
@@ -250,7 +249,7 @@ void Calculator::execute(){
     delete this->_o2;
 }
 void Calculator::redrawBuffers(){
-    if(this->_state == InsertFirstOperand){
+    if(this->_state == InsertFirstOperand ||  this->_state == Startup){
         this->_historyBuffer = "";
         this->_screenBuffer = this->_o1->ToString();
     }
