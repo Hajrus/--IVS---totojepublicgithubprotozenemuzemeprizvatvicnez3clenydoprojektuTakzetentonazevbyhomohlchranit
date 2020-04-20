@@ -171,7 +171,7 @@ void Calculator::Press(CalculatorButton button){
                     catch(CalculatorException e){
                         e.Print();
                         this->_state = Error;
-                        this->_o1 = new Operand("error");
+                        this->_screenBuffer = "Error";
                         this->_o2 = new Operand();
                     }
                 }  
@@ -196,7 +196,7 @@ void Calculator::Press(CalculatorButton button){
                 catch(CalculatorException e){
                     e.Print();
                     this->_state = Error;
-                    this->_o1 = new Operand("error");
+                    this->_screenBuffer = "Error";
                     this->_o2 = new Operand();
                 }
                 
@@ -213,6 +213,7 @@ void Calculator::Press(CalculatorButton button){
     }
     else if(this->_state == Error){
         this->clear();
+        this->_screenBuffer = "Error";
         this->_state = Startup;
     }
     this->redrawBuffers();
