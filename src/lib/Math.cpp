@@ -29,7 +29,7 @@ double Math::Add(double firstOperand, double secondOperand){
 }
 
 double Math::Sub(double firstOperand, double secondOperand){
-    return firstOperand + secondOperand;
+    return firstOperand - secondOperand;
 }
 
 double Math::Mult(double firstOperand, double secondOperand){
@@ -64,7 +64,8 @@ double Math::Power(double base, unsigned int exponent){
 }
 
 double Math::GeneralRoot(double x, double n){
-    return pow(x, 1/n);
+    //return pow(x, 1/n);
+    return 0;
 }
         
 int Math::Mod(int numer, int denom){
