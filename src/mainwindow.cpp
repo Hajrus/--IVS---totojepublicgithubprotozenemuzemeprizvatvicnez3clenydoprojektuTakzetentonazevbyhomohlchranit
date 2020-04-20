@@ -5,28 +5,10 @@
 #include "operator.h"
 #include <string>
 
-/*
-double firstVal = 0.0; //ukladani prvni promenne
-double secondVal = 0.0; //ukladani druhe promenne
-double outputVal = 0;
-
-bool isPower = false;
-bool isSqrt = false;
-bool isMod = false;
-bool isMul = false;
-bool isAdd = false;
-bool isSub = false;
-bool isDiv = false;
-
-bool dotPresed = false;
-bool opPressed = false; //uchovovava info., zda byl stisknut jakykoliv operator
-*/
 
 IVS::Calculator *kalkulacka; //globalni promenna pro praci s daty kalkulacky
 
-/*
- *
- */
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -36,22 +18,19 @@ MainWindow::MainWindow(QWidget *parent)
     kalkulacka = new IVS::Calculator();
     //nastaveni displejů
     ui->lineEdit_2->setText("");
+    ui->lineEdit->setText("");
     //inicializace číselníku
-    QString butName;
-    QPushButton *nmbrButtons[11];
-    for(int i=0; i<11; i++)
-    {
-        if (i == 10)
-        {
-            QString butName = "ButtonDot";
-            nmbrButtons[i]=MainWindow::findChild<QPushButton *>(butName);
-            connect(nmbrButtons[i], SIGNAL(released()), this, SLOT(ButtonPress()));
-        }
-        QString butName = "Button" + QString::number(i);
-        nmbrButtons[i]=MainWindow::findChild<QPushButton *>(butName);
-        connect(nmbrButtons[i], SIGNAL(released()), this, SLOT(ButtonPress()));
-    }
-
+    connect(ui->Button0, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button1, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button2, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button3, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button4, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button5, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button6, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button7, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button8, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->Button9, SIGNAL(released()), this, SLOT(ButtonPress()));
+    connect(ui->ButtonDot, SIGNAL(released()), this, SLOT(ButtonPress()));
     //Inicializace funkci
     connect(ui->ButtonAdd, SIGNAL(released()), this, SLOT(ButtonPress()));
     connect(ui->ButtonSub, SIGNAL(released()), this, SLOT(ButtonPress()));
@@ -67,15 +46,14 @@ MainWindow::MainWindow(QWidget *parent)
 
 }
 
-/*
- *
- */
+
 void MainWindow::ButtonPress()
 {
     QPushButton *buttonPress=(QPushButton *)sender();
     QString buttonVal = buttonPress->text();
 
-
+    //Zjisteni, ktere tlacitko byl zmacknuto,
+    //nasledne zavolani prislusne funkce
     if (buttonVal == "0"){
         kalkulacka->Press(IVS::zero);
     }else if(buttonVal == "1"){
@@ -124,11 +102,11 @@ void MainWindow::ButtonPress()
         kalkulacka->Press(IVS::del);
     }
 
-    //displej s historii
+    //update displeje s historii
     std::string screenBuffer = kalkulacka->GetHistoryBuffer();
     QString qstr = QString::fromStdString(screenBuffer);
     ui->lineEdit_2->setText(qstr);
-    //displej se vstupem
+    //update displeje se vstupem
     screenBuffer = kalkulacka->GetScreenBuffer();
     qstr = QString::fromStdString(screenBuffer);
     ui->lineEdit->setText(qstr);

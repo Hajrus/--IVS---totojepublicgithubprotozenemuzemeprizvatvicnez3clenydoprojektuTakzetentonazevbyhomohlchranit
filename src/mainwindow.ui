@@ -78,6 +78,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -99,6 +109,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -120,6 +140,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -141,6 +171,16 @@
 	border-style: none;
  	background-color: #ff3300;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #e62e00;
+}
+
+QPushButton:pressed
+{
+	background-color: #cc2900;
 }</string>
        </property>
        <property name="text">
@@ -162,6 +202,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -183,6 +233,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -227,6 +287,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -248,6 +318,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -269,6 +349,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -290,6 +380,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -311,6 +411,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -332,6 +442,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -353,6 +473,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -374,6 +504,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -395,6 +535,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -416,6 +566,16 @@
 	border-style: none;
  	background-color: #ff3300;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #e62e00;
+}
+
+QPushButton:pressed
+{
+	background-color: #cc2900;
 }</string>
        </property>
        <property name="text">
@@ -443,6 +603,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -464,6 +634,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -491,6 +671,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -512,6 +702,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -533,6 +733,16 @@
 	border-style: none;
  	background-color: #ffd633;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: #ffcc00;
+}
+
+QPushButton:pressed
+{
+	background-color: #e6b800;
 }</string>
        </property>
        <property name="text">
@@ -577,6 +787,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
@@ -598,6 +818,16 @@
 	border-style: none;
 	background-color: lightgray;
 	font-size: 20px;
+}
+
+QPushButton:hover
+{
+	background-color: Silver;
+}
+
+QPushButton:pressed
+{
+	background-color: DarkGray;
 }</string>
        </property>
        <property name="text">
