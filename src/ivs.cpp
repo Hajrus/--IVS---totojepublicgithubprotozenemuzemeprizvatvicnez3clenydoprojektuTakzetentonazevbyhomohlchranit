@@ -62,12 +62,13 @@ void Operand::Append(CalculatorButton c){
 void Operand::Erase(){
     if(!this->_stringValue.empty()){
         this->_stringValue.pop_back();
-        this->_doubleValue = std::stod(this->_stringValue);
-    }
-    else{
-        this->_doubleValue = 0;
-    }
-    
+        if(this->_stringValue != "")
+            this->_doubleValue = std::stod(this->_stringValue);
+        else{
+            this->_doubleValue = 0.00; 
+        }
+        
+    }    
 }   
 std::string Operand::DoubleToStr(double val){
     std::ostringstream strs;
