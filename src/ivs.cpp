@@ -83,7 +83,7 @@ bool Operand::validStr(std::string input){
     return true;
 }
 bool Operand::validChar(CalculatorButton c){
-    if((c < 48 || c > 57) && c != 46){
+    if((c < 48 || c > 57) && c != 46 && c != pi){
         throw new CalculatorException("Neplatný znak v operandu.");
     }
     return true;
