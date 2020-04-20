@@ -26,7 +26,7 @@ Operand* Sqrt::execute(){
     if(this->_o2->ToDouble() < 0){
         throw CalculatorException("Odmocnina ze záporného čísla neexistuje.");
     }
-    return this->_result = new Operand(Math::GeneralRoot(this->_o1->ToDouble(), this->_o2->ToDouble()));
+    return this->_result = new Operand(Math::GeneralRoot(this->_o2->ToDouble(), this->_o1->ToDouble()));
 }
 Operand* Mod::execute(){
     if(this->_o2->ToDouble() == 0){
