@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Button9, SIGNAL(released()), this, SLOT(ButtonPress()));
     connect(ui->ButtonDot, SIGNAL(released()), this, SLOT(ButtonPress()));
     //Inicializace funkci
+    connect(ui->ButtonPi, SIGNAL(released()), this, SLOT(ButtonPress()));
     connect(ui->ButtonAdd, SIGNAL(released()), this, SLOT(ButtonPress()));
     connect(ui->ButtonSub, SIGNAL(released()), this, SLOT(ButtonPress()));
     connect(ui->ButtonDiv, SIGNAL(released()), this, SLOT(ButtonPress()));
