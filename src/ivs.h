@@ -73,8 +73,7 @@ namespace IVS{
             explicit Operator(Operand* o1);
             virtual ~Operator();
 
-            Operand* GetResult();
-            virtual void execute();  
+            Operand* GetResult();  
         protected:
             Operand* _result;
             Operand* _o1;

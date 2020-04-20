@@ -77,11 +77,9 @@ Operator::Operator(Operand* o1, Operand* o2){
     this->_o1 = o1;
     this->_o2 = o2;
     this->_result = new Operand();
-    this->execute();
 }
 Operator::Operator(Operand* o1){
     this->_o1 = o1;
-    this->execute();
 }
 Operator::~Operator(){
     delete this->_result;
@@ -95,7 +93,6 @@ Calculator::Calculator(){
     this->_o1 = new Operand();
     this->_o2 = new Operand();
 }
-void Operator::execute(){}
 void Calculator::Press(CalculatorButton button){
     if(this->_state == InsertFirstOperand){
         if(isConstant(button)){
@@ -175,21 +172,21 @@ bool Calculator::isFunction(CalculatorButton button){
 void Calculator::execute(){
     Operand* oldOperand = this->_o1;
     if(this->_actualOperator == multiply)
-        this->_o1 = (new Multiply(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Multiply(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == plus)
-        this->_o1 = (new Plus(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Plus(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == minus)
-        this->_o1 = (new Minus(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Minus(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == divide)
-        this->_o1 = (new Divide(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Divide(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == divide)
-        this->_o1 = (new Power(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Power(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == mod)
-        this->_o1 = (new Mod(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Mod(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == factorial)
-        this->_o1 = (new Factorial(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Factorial(this->_o1, this->_o2))->execute();
     else if(this->_actualOperator == sqr)
-        this->_o1 = (new Sqrt(this->_o1, this->_o2))->GetResult();
+        this->_o1 = (new Sqrt(this->_o1, this->_o2))->execute();
     
     delete oldOperand;
     delete this->_o2;
