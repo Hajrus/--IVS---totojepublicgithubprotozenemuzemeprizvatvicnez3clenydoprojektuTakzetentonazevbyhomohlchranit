@@ -11,6 +11,11 @@ namespace IVS{
     class Plus : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief sečte první a druhý operand
+             * op1 + op2
+             * @return navrátí ukazatel na operand s výsledkem
+             */  
             Operand* execute(); 
     };
     /**
@@ -20,6 +25,11 @@ namespace IVS{
     class Minus : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief odečte první a druhý operand
+             * op1 - op2
+             * @return navrátí ukazatel na operand s výsledkem
+             */  
             Operand* execute(); 
     };
     /**
@@ -29,6 +39,11 @@ namespace IVS{
     class Multiply : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief vynásobí první a druhý operand
+             * op1 * op2
+             * @return navrátí ukazatel na operand s výsledkem
+             */  
             Operand* execute(); 
     };
     /**
@@ -38,6 +53,12 @@ namespace IVS{
     class Divide : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief vydělí první a druhý operand
+             * op1 / op2
+             * @exception CalculatorException, pokud se dělí nulou
+             * @return navrátí ukazatel na operand s výsledkem
+             */  
             Operand* execute(); 
     };
     /**
@@ -47,6 +68,11 @@ namespace IVS{
     class Power : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief umocní první druhým operandem
+             * op1 ^ op2
+             * @return navrátí ukazatel na operand s výsledkem
+             */  
             Operand* execute(); 
     };
     /**
@@ -56,6 +82,11 @@ namespace IVS{
     class Sqrt : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief Vypočte op1 odmocninu z op2
+             * @exception CalculatorException, pokud se odmocňuje záporné číslo.
+             * @return navrátí ukazatel na operand s výsledkem
+             */ 
             Operand* execute(); 
     };
     /**
@@ -65,6 +96,11 @@ namespace IVS{
     class Mod : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief Vypočte celočíselný zbytek po dělení op1 / op2
+             * @exception CalculatorException, pokud se dělí nulou
+             * @return navrátí ukazatel na operand s výsledkem
+             */ 
             Operand* execute(); 
     };
     /**
@@ -74,6 +110,11 @@ namespace IVS{
     class Factorial : public Operator{
         using Operator::Operator;
         public:
+            /**
+             * @brief vypočte faktorial op1!
+             * @exception CalculatorException, pokud je op1 záporné
+             * @return navrátí ukazatel na operand s výsledkem
+             */
             Operand* execute(); 
     };
 };
