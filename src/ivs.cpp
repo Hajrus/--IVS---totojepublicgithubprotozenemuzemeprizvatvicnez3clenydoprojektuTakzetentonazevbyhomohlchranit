@@ -162,7 +162,7 @@ void Calculator::Press(CalculatorButton button){
                 this->clear();
             }
             else if(button == equals){
-                if(button == factorial){
+                if(this->_actualOperator == factorial){
                     execute();
                     this->_state = InsertFirstOperand;
                     this->_o2 = new Operand();
