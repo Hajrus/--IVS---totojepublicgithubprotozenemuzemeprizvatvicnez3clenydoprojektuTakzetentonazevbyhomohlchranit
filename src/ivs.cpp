@@ -288,7 +288,7 @@ void Calculator::redrawBuffers(){
         this->_historyBuffer = "";
         this->_screenBuffer = this->_o1->ToString();
     }
-    if(this->_state == Error){
+    else if(this->_state == Error){
         this->_historyBuffer = "";
         this->_screenBuffer = "Error";
     }
