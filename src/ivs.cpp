@@ -47,7 +47,7 @@ void Operand::Append(CalculatorButton c){
         }
         else{
             if(c == dot){
-                if(this->_stringValue.find('.') != std::string::npos && this->_stringValue.size() > 0){
+                if(this->_stringValue.find('.') != std::string::npos && this->_stringValue.size() == 0){
                     return;
                 }
             }
