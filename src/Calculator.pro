@@ -19,11 +19,13 @@ SOURCES += \
     main.cpp \
     ivs.cpp \
     operator.cpp \
+    Math.cpp \
     mainwindow.cpp
 
 HEADERS += \
     ivs.h \
     operator.h \
+    Math.h \
     mainwindow.h
 
 FORMS += \
