@@ -35,7 +35,7 @@ namespace IVS{
 
     } CalculatorButton;
     typedef enum{
-        InsertFirstOperand, OperatorAdded, InsertSecondOperand
+        Startup, InsertFirstOperand, OperatorAdded, InsertSecondOperand
     } CalculatorState;
 
     class CalculatorException{

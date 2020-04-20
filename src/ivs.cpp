@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <math.h>
 #include "ivs.h"
 #include "operator.h"
 
@@ -40,18 +41,33 @@ double Operand::ToDouble(){
 void Operand::Append(CalculatorButton c){
     try{
         validChar(c);
-        this->_stringValue += (char) c;
-        this->_doubleValue = std::stod(this->_stringValue);
+        if(c == pi){
+            this->_doubleValue = M_PI;
+            this->_stringValue = this->DoubleToStr(this->_doubleValue);
+        }
+        else{
+            if(c == dot){
+                if(this->_stringValue.find('.') != std::string::npos){
+                    return;
+                }
+            }
+            this->_stringValue += (char) c;
+            this->_doubleValue = std::stod(this->_stringValue);
+        }
     }
     catch(CalculatorException* e){
         e->Print();
     }
 }
 void Operand::Erase(){
-    if(!this->_stringValue.empty())
+    if(!this->_stringValue.empty()){
         this->_stringValue.pop_back();
-
-     this->_doubleValue = std::stod(this->_stringValue);
+        this->_doubleValue = std::stod(this->_stringValue);
+    }
+    else{
+        this->_doubleValue = 0;
+    }
+    
 }   
 std::string Operand::DoubleToStr(double val){
     std::ostringstream strs;
@@ -89,12 +105,26 @@ Operand* Operator::GetResult(){
 }
 
 Calculator::Calculator(){
-    this->_state = InsertFirstOperand;
+    this->_state = Startup;
     this->_o1 = new Operand();
     this->_o2 = new Operand();
 }
 void Calculator::Press(CalculatorButton button){
-    if(this->_state == InsertFirstOperand){
+    if(this->_state == Startup){
+        if(isConstant(button)){
+            this->_o1->Append(button);
+            this->_state = InsertFirstOperand;
+        }
+        else if(isFunction(button)){
+            if(button == del){
+                 this->_o1->Erase();
+            }
+            else if(button == CalculatorButton::clear){
+                this->clear();
+            }
+        }
+    }
+    else if(this->_state == InsertFirstOperand){
         if(isConstant(button)){
             this->_o1->Append(button);
         }
@@ -138,11 +168,11 @@ void Calculator::Press(CalculatorButton button){
         else if(isFunction(button)){
             if(button == equals){
                 execute();
-                this->_state = InsertFirstOperand;
+                this->_state = Startup;
+                delete this->_o2;
                 this->_o2 = new Operand();
             }
             else if(button == CalculatorButton::clear){
-                this->_state = InsertFirstOperand;
                 this->clear();
             }
             else if(button == CalculatorButton::del){
@@ -195,6 +225,7 @@ void Calculator::clear(){
     
     this->_screenBuffer = "";
     this->_historyBuffer = "";
+    this->_state = Startup;
 }
 void Calculator::execute(){
     Operand* oldOperand = this->_o1;
