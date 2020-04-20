@@ -11,3 +11,4 @@ src/ivs/ivs.pro
 src/ivs/ivs.pro.user
 src/ivs/ivs.ui
 src/ivs/main.cpp
+.vscode/settings.json

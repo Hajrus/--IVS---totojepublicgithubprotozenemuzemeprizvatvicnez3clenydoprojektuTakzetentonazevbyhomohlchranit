@@ -103,7 +103,12 @@ void Calculator::Press(CalculatorButton button){
             this->_state = OperatorAdded;
         }
         else if(isFunction(button)){
-            //nedelej nic
+            if(button == del){
+                 this->_o1->Erase();
+            }
+            else if(button == CalculatorButton::clear){
+                this->clear();
+            }
         }
     }
     else if(this->_state == OperatorAdded){
@@ -115,7 +120,12 @@ void Calculator::Press(CalculatorButton button){
             this->_actualOperator = button;
         }
         else if(isFunction(button)){
-            //nedelej nic
+            if(button == del){
+                 this->_state = InsertFirstOperand;
+            }
+            else if(button == CalculatorButton::clear){
+                this->clear();
+            }
         }
     }
     else if(this->_state == InsertSecondOperand){
@@ -126,10 +136,18 @@ void Calculator::Press(CalculatorButton button){
             this->_actualOperator = button;
         }
         else if(isFunction(button)){
-            if(button == equals)
+            if(button == equals){
                 execute();
-            this->_state = InsertFirstOperand;
-            this->_o2 = new Operand();
+                this->_state = InsertFirstOperand;
+                this->_o2 = new Operand();
+            }
+            else if(button == CalculatorButton::clear){
+                this->_state = InsertFirstOperand;
+                this->clear();
+            }
+            else if(button == CalculatorButton::del){
+                this->_o2->Erase();
+            }
         }
     }
     this->redrawBuffers();

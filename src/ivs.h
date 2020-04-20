@@ -99,7 +99,8 @@ namespace IVS{
             bool isConstant(CalculatorButton button);
             bool isOperator(CalculatorButton button);
             bool isFunction(CalculatorButton button);
-
+            
+            void clear();
             void execute();
             void redrawBuffers();
     };
