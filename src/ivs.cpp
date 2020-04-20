@@ -62,7 +62,7 @@ void Operand::Append(CalculatorButton c){
 void Operand::Erase(){
     if(!this->_stringValue.empty()){
         this->_stringValue.pop_back();
-        if(this->_stringValue != "")
+        if(this->_stringValue != "" && this->_stringValue != "-")
             this->_doubleValue = std::stod(this->_stringValue);
         else{
             this->_doubleValue = 0.00; 
