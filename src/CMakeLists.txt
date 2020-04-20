@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.17)
 project(MathLib)
 
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x -Wno-deprecated-declarations")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wno-deprecated-declarations")
 
 enable_testing()
 add_subdirectory(tests)

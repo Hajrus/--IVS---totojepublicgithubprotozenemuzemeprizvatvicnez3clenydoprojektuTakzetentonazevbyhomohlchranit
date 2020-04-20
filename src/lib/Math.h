@@ -15,8 +15,6 @@
 #ifndef MATH_LIB_H_
 #define MATH_LIB_H_
 
-#include <math.h>
-
 /**
  * @file Math.h
  * @author Kliš Michal (xklism00)

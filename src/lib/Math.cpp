@@ -22,7 +22,9 @@
  * @brief Implementation of Math class - math library
  */
 
+#include <cmath> 
 #include "Math.h"
+
 
 double Math::Add(double firstOperand, double secondOperand){
     return firstOperand + secondOperand;
@@ -37,14 +39,14 @@ double Math::Mult(double firstOperand, double secondOperand){
 }
 
 double Math::Div(double numer, double denom){
+    if(denom == 0)
+    {
+        throw("Nelze dělit nulou");
+    }
     return numer / denom;
 }
 
 unsigned long long Math::Factorial(unsigned int n){
-    if(n < 0)
-    {
-        return(-1);
-    }
     unsigned long long factorial = 1;
     for(int i = 1; i <= n; ++i)
     {
@@ -54,7 +56,7 @@ unsigned long long Math::Factorial(unsigned int n){
 }
 
 double Math::Power(double base, unsigned int exponent){
-    int result = 1;
+    double result = 1;
     for (exponent; exponent>0; exponent--)
     {
         result = result * base;
@@ -64,10 +66,13 @@ double Math::Power(double base, unsigned int exponent){
 }
 
 double Math::GeneralRoot(double x, double n){
-    //return pow(x, 1/n);
-    return 0;
+    return std::pow(x, 1/n);
 }
         
 int Math::Mod(int numer, int denom){
+    if(denom == 0)
+    {
+        throw("Nelze dělit nulou");
+    }
     return numer % denom;
 }
