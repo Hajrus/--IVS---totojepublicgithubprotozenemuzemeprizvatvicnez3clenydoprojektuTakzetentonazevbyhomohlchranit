@@ -119,7 +119,7 @@ void Calculator::Press(CalculatorButton button){
         else if(isFunction(button)){
             if(button == del){
                  this->_o1->Erase();
-                 if(this->_o1->ToString.empty())
+                 if(this->_o1->ToString().empty())
                     this->_state = Startup;
             }
             else if(button == CalculatorButton::clear){
@@ -179,7 +179,7 @@ void Calculator::Press(CalculatorButton button){
             }
             else if(button == CalculatorButton::del){
                 this->_o2->Erase();
-                if(this->_o2->ToString.empty())
+                if(this->_o2->ToString().empty())
                     this->_state = Startup;
             }
         }
