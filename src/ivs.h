@@ -58,7 +58,7 @@ namespace IVS{
      * CalculatorState definuje jednotlivé stavy kalkulačky, která funguje jako rádoby stavový automat.
      */
     typedef enum{
-        Startup, InsertFirstOperand, OperatorAdded, InsertSecondOperand
+        Startup, InsertFirstOperand, OperatorAdded, InsertSecondOperand, Error
     } CalculatorState;
 
     /**

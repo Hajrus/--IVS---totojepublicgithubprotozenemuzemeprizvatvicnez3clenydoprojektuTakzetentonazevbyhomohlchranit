@@ -163,9 +163,17 @@ void Calculator::Press(CalculatorButton button){
             }
             else if(button == equals){
                 if(this->_actualOperator == factorial){
-                    execute();
-                    this->_state = InsertFirstOperand;
-                    this->_o2 = new Operand();
+                    try{
+                        execute();
+                        this->_state = InsertFirstOperand;
+                        this->_o2 = new Operand();
+                    }
+                    catch(CalculatorException e){
+                        e.Print();
+                        this->_state = Error;
+                        this->_o1 = new Operand("error");
+                        this->_o2 = new Operand();
+                    }
                 }  
             }
         }
@@ -179,9 +187,19 @@ void Calculator::Press(CalculatorButton button){
         }
         else if(isFunction(button)){
             if(button == equals){
-                execute();
-                this->_state = InsertFirstOperand;
-                this->_o2 = new Operand();
+                try{
+                    execute();
+
+                    this->_state = InsertFirstOperand;
+                    this->_o2 = new Operand();
+                }
+                catch(CalculatorException e){
+                    e.Print();
+                    this->_state = Error;
+                    this->_o1 = new Operand("error");
+                    this->_o2 = new Operand();
+                }
+                
             }
             else if(button == CalculatorButton::clear){
                 this->clear();
@@ -192,6 +210,10 @@ void Calculator::Press(CalculatorButton button){
                     this->_state = Startup;
             }
         }
+    }
+    else if(this->_state == Error){
+        this->clear();
+        this->_state = Startup;
     }
     this->redrawBuffers();
 }
