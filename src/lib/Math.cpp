@@ -48,7 +48,7 @@ double Math::Div(double numer, double denom){
 
 unsigned long long Math::Factorial(unsigned int n){
     unsigned long long factorial = 1;
-    for(int i = 1; i <= n; ++i)
+    for(unsigned int i = 1; i <= n; ++i)
     {
         factorial *= i;
     }
@@ -57,7 +57,7 @@ unsigned long long Math::Factorial(unsigned int n){
 
 double Math::Power(double base, unsigned int exponent){
     double result = 1;
-    for (exponent; exponent>0; exponent--)
+    for (; exponent>0; exponent--)
     {
         result = result * base;
     }
