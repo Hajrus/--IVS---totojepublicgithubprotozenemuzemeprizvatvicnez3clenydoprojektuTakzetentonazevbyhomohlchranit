@@ -188,7 +188,7 @@ std::string Calculator::GetHistoryBuffer(){
     return this->_historyBuffer;
 }
 bool Calculator::isConstant(CalculatorButton button){
-    if(((int)button >= 48 && (int)button <= 57) || button == dot){
+    if(((int)button >= 48 && (int)button <= 57) || button == dot || button == pi){
         return true;
     }
     return false;
