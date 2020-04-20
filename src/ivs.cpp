@@ -180,12 +180,21 @@ bool Calculator::isOperator(CalculatorButton button){
 }
 bool Calculator::isFunction(CalculatorButton button){
     if (button == equals ||
-        button == clear ||
+        button == CalculatorButton::clear ||
         button == del 
         ){
         return true;
     }
     return false;
+}
+void Calculator::clear(){
+    delete this->_o1;
+    this->_o1 = new Operand();
+    delete this->_o2;
+    this->_o2 = new Operand();
+    
+    this->_screenBuffer = "";
+    this->_historyBuffer = "";
 }
 void Calculator::execute(){
     Operand* oldOperand = this->_o1;

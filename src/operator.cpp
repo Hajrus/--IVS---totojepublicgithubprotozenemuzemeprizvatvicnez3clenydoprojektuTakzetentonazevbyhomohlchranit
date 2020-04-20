@@ -1,6 +1,6 @@
 #include <math.h>
 #include "operator.h"
-#include "Math.h"
+#include "lib/Math.h"
 
 using namespace IVS;
 
