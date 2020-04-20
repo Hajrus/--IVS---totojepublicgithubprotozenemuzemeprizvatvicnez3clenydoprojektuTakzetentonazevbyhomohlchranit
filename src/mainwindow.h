@@ -41,6 +41,13 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    /**
+     * @brief AsciiToSqrt
+     * Dostane string a vrátí QString s vloženým znakem "√", pokud byl zadán
+     * @param String pro převedení
+     * @return Převedený QString
+     */
+    QString AsciiToSqrt(std::string str);
 
 private slots:
     /**

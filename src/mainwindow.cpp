@@ -105,15 +105,23 @@ void MainWindow::ButtonPress()
 
     //update displeje s historii
     std::string screenBuffer = kalkulacka->GetHistoryBuffer();
-    QString qstr = QString::fromStdString(screenBuffer);
+    //QString qstr = QString::fromStdString(screenBuffer);
+    QString qstr = MainWindow::AsciiToSqrt(screenBuffer);
     ui->lineEdit_2->setText(qstr);
     //update displeje se vstupem
     screenBuffer = kalkulacka->GetScreenBuffer();
-    qstr = QString::fromStdString(screenBuffer);
+    //qstr = QString::fromStdString(screenBuffer);
+    qstr = MainWindow::AsciiToSqrt(screenBuffer);
     ui->lineEdit->setText(qstr);
 
 }
 
+QString MainWindow::AsciiToSqrt(std::string str)
+{
+    QString qstr = QString::fromStdString(str);
+    qstr.replace((int)2,"√");
+    return qstr;
+}
 
 /*
  *
