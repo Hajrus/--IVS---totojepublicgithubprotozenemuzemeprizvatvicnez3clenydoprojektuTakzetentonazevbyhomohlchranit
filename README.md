@@ -1,13 +1,19 @@
-# IVS PROJEKT 
-## KORONAVIRUS DESTOYED
+Prostredi
+---------
 
-Stránka githubu pro projekt IVS
+Ubuntu 64bit
+Windows 64bit
 
-TEAM:  **KORONAVIRUS DESTROYED**
+Autori
+------
 
-Členové:
+KORONAVIRUS DESTROYED
+- xklism00 Michal Kliš 
+- xflekd00 David Flek 
+- xsirok09 Ondřej Široký 
+- xsladk09 Jan Sladký 
 
-    Kliš Michal (xklism00)
-    Flek David (xflekd00)
-    Sladký Jan (xsladk09)
-    Široký Ondřej (xsirok09)
+Licence
+-------
+
+Tento program je poskytovan pod licencí GNU GPL v. 3
