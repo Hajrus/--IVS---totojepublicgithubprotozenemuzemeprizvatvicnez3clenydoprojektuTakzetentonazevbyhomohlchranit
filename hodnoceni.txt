@@ -1,4 +1,4 @@
-xflekd00 100 (základ GUI a základní mat. operace)
+xflekd00 100 (základ GUI a základní mat. operace, uživatelská dokumentace, mockupy)
 xklism00 100 (pokročilé mat. operace)
 xsladk09 100 (profiling, instalátor)
 xsirok09 100 (testy, dokumentace)
