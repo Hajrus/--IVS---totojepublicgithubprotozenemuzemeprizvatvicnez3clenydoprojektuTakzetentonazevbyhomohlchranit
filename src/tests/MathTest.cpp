@@ -1,3 +1,26 @@
+/*********************************************************************************************************
+ * Název projektu: IVS - Kalkulačka
+ * Soubor: stddev.cpp
+ * Datum: 25.03. 2020
+ * Poslední změna: 23.04. 2020
+ * Autoři: Kliš Michal (xklism00)
+ *          Flek David (xflekd00)
+ *          Široký Ondřej (xsirok09)
+ *          Sladký Jan (xsladk09)
+ * 
+ * Popis: Testy matematické knihovny
+ * 
+ * *******************************************************************************************************/
+
+/**
+ * @file MathTest.cpp
+ * @author Kliš Michal (xklism00)
+ * @author Flek David (xflekd00)
+ * @author Široký Ondřej (xsirok09)
+ * @author Sladký Jan (xsladk09)
+ * 
+ * @brief Testy matematické knihovny
+ */
 #include "gtest/gtest.h"
 #include "Math.h"
 
