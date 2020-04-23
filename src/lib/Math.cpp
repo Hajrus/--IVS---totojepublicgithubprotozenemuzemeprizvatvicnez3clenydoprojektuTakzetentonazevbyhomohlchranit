@@ -1,14 +1,14 @@
 /*********************************************************************************************************
- * Project name: IVS - Calculator with basic mathematical operations
- * File: Math.h
- * Date: 24.03.2020
- * Last change: 30.03. 2020
- * Authors: Kliš Michal (xklism00)
+ * Název projektu: IVS - Kalkulačka
+ * Soubor: Math.cpp
+ * Datum: 24.03.2020
+ * Poslední změna: 22.04. 2020
+ * Autoři: Kliš Michal (xklism00)
  *          Flek David (xflekd00)
  *          Široký Ondřej (xsirok09)
  *          Sladký Jan (xsladk09)
  * 
- * Description: Implementation of math libraries
+ * Popis: Implementace knihovny zakladních matematckých operací
  * 
  * *******************************************************************************************************/
 
@@ -19,7 +19,7 @@
  * @author Široký Ondřej (xsirok09)
  * @author Sladký Jan (xsladk09)
  * 
- * @brief Implementation of Math class - math library
+ * @brief Knihovna zakladních matematckých operací
  */
 
 #include <cmath> 
