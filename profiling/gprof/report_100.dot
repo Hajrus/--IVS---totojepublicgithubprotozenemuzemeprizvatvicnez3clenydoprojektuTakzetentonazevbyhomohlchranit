@@ -1,0 +1,15 @@
+digraph {
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	8 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="Math::Add(double, double)\n100.00%\n(100.00%)\n200×"];
+	9 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="Math::Power(double, unsigned int)\n100.00%\n(100.00%)\n101×"];
+	10 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="Math::Div(double, double)\n100.00%\n(100.00%)\n2×"];
+	11 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="Math::Sub(double, double)\n100.00%\n(100.00%)\n2×"];
+	12 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="Math::Mult(double, double)\n100.00%\n(100.00%)\n2×"];
+	13 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="_GLOBAL__sub_I_main\n100.00%\n(100.00%)\n1×"];
+	13 -> 14 [arrowsize="1.00", color="#ff0000", fontcolor="#ff0000", fontsize="10.00", label="100.00%\n1×", labeldistance="4.00", penwidth="4.00"];
+	14 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="__static_initialization_and_destruction_0(int, int)\n100.00%\n(100.00%)\n1×"];
+	15 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="Math::GeneralRoot(double, double)\n100.00%\n(100.00%)\n1×"];
+	16 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="std::ios_base::precision(long)\n100.00%\n(100.00%)\n1×"];
+}
