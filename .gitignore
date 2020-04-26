@@ -12,3 +12,9 @@ src/ivs/ivs.pro.user
 src/ivs/ivs.ui
 src/ivs/main.cpp
 .vscode/settings.json
+
+doc/
+
+src/stddev
+
+src/Calculator.pro.user
