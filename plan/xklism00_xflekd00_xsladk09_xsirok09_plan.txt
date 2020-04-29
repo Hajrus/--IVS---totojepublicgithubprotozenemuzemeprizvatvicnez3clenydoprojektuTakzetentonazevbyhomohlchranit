@@ -1,0 +1,51 @@
+Tento soubor bude obsahovat:
+
+-- stanovené termíny,
+-- přidělení úkolů na projektu jednotlivým řešitelům,
+
+(22. 3) GITHUB - MIchal Kliš
+
+Frontend:
+(22. 3) moccup - David Flek 
+(24. 3) návrh frontendu - Michal Kliš
+
+Backend:
+(24. 3) návrh backendu - app Jan Sladký
+
+(29. 3) kostra souboru (header files) Jan Sladký
+
+(2. 4) makefile - Ondřej široký
+
+(2. 4) spustitená appka(bez funkci) i s gui - Ondřej široký
+
+(2. 4) doxygen - Michal Kliš
+
+(5. 4)Testy - Jan Sladký, Michal Kliš
+
+Implementace:
+
+    (12. 4) Fontend (gui) - David Flek
+
+    (12. 4) Implementace callbacků David Flek, Michal Kliš
+
+    (12. 4) Backend - app - Ondřej široký, Jan Sladký
+
+    (12. 4) Implementace matematických funkcí Ondřej široký, 
+
+
+(15. 4) instalátor programu, který kromě samotného programu nainstaluje i odinstalátor, - Ondřej široký
+
+(18. 4) Uživatelská příručka - Michal Kliš, David Flek
+
+
+-- zvolené komunikační kanály pro komunikaci v týmu a stanovená pravidla pro komunikaci (jsou-li nějaká),
+
+Discord 
+
+-- zvolený systém pro správu verzí a hosting + informaci, jak do repozitáře mohou nahlédnout vyučující/cvičící (viz níže).
+
+
+github
+https://github.com/Hajrus/IVS.git
+
+přibude invite link, případně zašleme na email.

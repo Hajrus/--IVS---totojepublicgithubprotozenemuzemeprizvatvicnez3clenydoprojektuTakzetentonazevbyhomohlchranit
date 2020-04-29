@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "helpdialog.h"
 #include "lib/Math.h"
 #include "ivs.h"
 #include "operator.h"
@@ -45,6 +46,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->ButtonClear, SIGNAL(released()), this, SLOT(ButtonPress()));
     connect(ui->ButtonDel, SIGNAL(released()), this, SLOT(ButtonPress()));
 
+    connect(ui->ButtonN, SIGNAL(released()), this, SLOT(ButtonPress()));
 }
 
 
@@ -101,6 +103,10 @@ void MainWindow::ButtonPress()
         kalkulacka->Press(IVS::clear);
     }else if(buttonVal == "Del"){
         kalkulacka->Press(IVS::del);
+    }else if(buttonVal == "Nápověda"){
+        helpdialog newdiag;
+        //newdiag.setModal(false);
+        newdiag.exec();
     }
 
     //update displeje s historii
