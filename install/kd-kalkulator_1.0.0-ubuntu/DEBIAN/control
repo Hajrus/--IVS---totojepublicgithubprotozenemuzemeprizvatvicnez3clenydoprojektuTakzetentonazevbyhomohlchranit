@@ -1,0 +1,14 @@
+Package: kd-calculator
+Version: 1.0.0-ubuntu
+Maintainer: Ondřej Široký <xsirok09@stud.fit.vutbr.cz>
+Section: math
+Architecture: all
+Priority: optional
+Description: Kalkulátor do předmětu IVS
+ Jednoduchý kalkulátor vytvořený do předmětu IVS.
+ Autoři:
+ Tým KORONAVIRUS DESTROYED
+ Kliš Michal (xklism00)
+ Flek David (xflekd00)
+ Široký Ondřej (xsirok09)
+ Sladký Jan (xsladk09)

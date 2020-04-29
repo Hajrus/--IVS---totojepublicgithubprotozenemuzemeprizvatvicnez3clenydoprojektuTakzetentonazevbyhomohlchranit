@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=KD Kalkulátor
+Version=1.0
+Exec=/usr/bin/kd-calculator/Calculator
+Comment=Kalkulátor
+Icon=/usr/bin/kd-calculator/icon.png
+Type=Application
+Terminal=false
+StartupNotify=true
+Encoding=UTF-8
+Categories=Math;
