@@ -22,21 +22,18 @@ SOURCES += \
     ivs.cpp \
     operator.cpp \
     lib/Math.cpp \
-    mainwindow.cpp \
-    helpdialog.cpp
+    mainwindow.cpp
 
 HEADERS += \
     helpdialog.h \
     ivs.h \
     operator.h \
     lib/Math.h \
-    mainwindow.h \
-    helpdialog.h
+    mainwindow.h
 
 FORMS += \
     helpdialog.ui \
-    mainwindow.ui \
-    helpdialog.ui
+    mainwindow.ui
 
 DESTDIR = ../build
 OBJECTS_DIR = ../build/
