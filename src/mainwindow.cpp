@@ -4,6 +4,9 @@
 #include "lib/Math.h"
 #include "ivs.h"
 #include "operator.h"
+#include <QtCore>
+#include <QDesktopServices>
+#include <QApplication>
 #include <string>
 
 
