@@ -84,6 +84,7 @@ cleanPackFolder:
 cleanTests:
 	rm -rf ./tests/build_tests
 
+# Smaže balík a binarku ze struktury pro vytvoření instalačky
 cleanInstallFolder:
 	rm -f ../install/$(DEBNAME).deb
 	rm -f ../install/$(DEBNAME)/usr/bin/kd-calculator/Calculator
