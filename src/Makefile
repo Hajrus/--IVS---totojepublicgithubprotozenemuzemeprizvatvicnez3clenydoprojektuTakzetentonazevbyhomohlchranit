@@ -21,6 +21,8 @@ CFLAGS = -std=c++11
 PACKNAME = xklism00_xflekd00_xsladk09_xsirok09
 # Nazev profileru
 PROF = stddev
+# Název deb balíčku
+DEBNAME = kd-kalkulator_1.0.0-ubuntu
 
 #Zkompiluje aplikaci a profiler
 all: 	
@@ -59,7 +61,9 @@ buildTests:
 clean:
 	make cleanTests
 	make cleanRepo
-	make cleanPack
+	make cleanPackZip
+	make cleanPackFolder
+	make cleanInstallFolder
 
 #Vymaže nechtěnné soubory v repozitáři
 cleanRepo:
@@ -80,6 +84,10 @@ cleanPackFolder:
 cleanTests:
 	rm -rf ./tests/build_tests
 
+cleanInstallFolder:
+	rm -f ../install/$(DEBNAME).deb
+	rm -f ../install/$(DEBNAME)/usr/bin/kd-calculator/Calculator
+
 
 # Vytvoří zip s příslušnou strukturou
 pack:
@@ -90,7 +98,16 @@ pack:
 	mkdir ../../$(PACKNAME)/install
 	make doc
 	cp -r ../doc/ ../../$(PACKNAME)/
+	make createInstaller
+	cp ../install/$(DEBNAME).deb ../../$(PACKNAME)/install/$(DEBNAME).deb
+	make cleanInstallFolder
+	make cleanRepo
 	cp -r ../ ../../$(PACKNAME)/repo/
-	cp -r ../install ../../$(PACKNAME)/
 	cd ../.. && zip -qr $(PACKNAME).zip $(PACKNAME)/
 	make cleanPackFolder
+
+# Vytvoří deb balíček pro instalaci
+createInstaller:
+	if [ ! -f ../build/Calculator ]; then make all; fi
+	cp ../build/Calculator ../install/$(DEBNAME)/usr/bin/kd-calculator/Calculator
+	dpkg-deb --build  ../install/$(DEBNAME)
