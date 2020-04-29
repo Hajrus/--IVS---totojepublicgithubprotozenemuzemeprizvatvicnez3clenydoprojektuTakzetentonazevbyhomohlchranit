@@ -1,1 +1,1 @@
-Mockupy vytvořené na: https://moqups.com/
+Mockupy
