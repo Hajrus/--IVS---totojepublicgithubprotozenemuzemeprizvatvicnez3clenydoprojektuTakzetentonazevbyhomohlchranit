@@ -2,7 +2,15 @@
 #define HELPDIALOG_H
 
 #include <QDialog>
-
+/**
+ * @file helpdialog.h
+ * @author Kliš Michal (xklism00)
+ * @author Flek David (xflekd00)
+ * @author Široký Ondřej (xsirok09)
+ * @author Sladký Jan (xsladk09)
+ *
+ * @brief Okno s nápovědou
+ */
 namespace Ui {
 class helpdialog;
 }
