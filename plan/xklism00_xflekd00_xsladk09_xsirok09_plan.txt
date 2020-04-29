@@ -3,7 +3,7 @@ Tento soubor bude obsahovat:
 -- stanovené termíny,
 -- přidělení úkolů na projektu jednotlivým řešitelům,
 
-(22. 3) GITHUB - MIchal Kliš
+(22. 3) GITHUB - Michal Kliš
 
 Frontend:
 (22. 3) moccup - David Flek 

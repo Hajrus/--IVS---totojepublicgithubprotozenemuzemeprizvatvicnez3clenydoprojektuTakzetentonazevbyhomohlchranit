@@ -1,1 +1,52 @@
 tento soubor bude obsahovat rozdil mezi planem projektu a skutecnosti
+
+Skutečnost:
+
+(18. 3) GITHUB - Michal Kliš
+(11.4.) GITHUB struktura - Michal Kliš
+
+Frontend:
+(11. 4) první mockup - David Flek 
+(19. 4) ostatní mockupu - David Flek 
+(24. 3) návrh frontendu - Michal Kliš
+
+Backend:
+(24. 3) návrh backendu - app Jan Sladký
+
+(29. 3) kostra souboru (header files) Jan Sladký
+
+(26. 4) makefile - Ondřej Široký
+
+(20. 4) spustitená appka(bez funkci) i s gui - David Flek, Michal Kliš
+
+(26. 4) DoxyFile - Ondřej Široký
+
+(20. 4) Testy - Jan Sladký
+
+Implementace:
+
+    (20. 4) Fontend (gui) - David Flek
+
+    (20. 4) Implementace callbacků David Flek, Michal Kliš
+
+    (12. 4) Backend - app - Ondřej Široký, Jan Sladký
+
+    (12. 4) Implementace matematických funkcí Ondřej Široký, 
+
+
+(29. 4) instalátor programu, který kromě samotného programu nainstaluje i odinstalátor, - Ondřej Široký
+
+(22. 4) Uživatelská příručka, Kalkulačka - David Flek
+
+(29. 4) Uživatelská příručka, Instalace - Ondřej Široký
+
+
+-- zvolené komunikační kanály pro komunikaci v týmu a stanovená pravidla pro komunikaci (jsou-li nějaká),
+
+Discord 
+
+-- zvolený systém pro správu verzí a hosting + informaci, jak do repozitáře mohou nahlédnout vyučující/cvičící (viz níže).
+
+
+github
+https://github.com/Hajrus/--IVS---totojepublicgithubprotozenemuzemeprizvatvicnez3clenydoprojektuTakzetentonazevbyhomohlchranit
