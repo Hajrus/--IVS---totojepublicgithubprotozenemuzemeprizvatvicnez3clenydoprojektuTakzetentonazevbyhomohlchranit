@@ -108,7 +108,6 @@ void MainWindow::ButtonPress()
         kalkulacka->Press(IVS::del);
     }else if(buttonVal == "Nápověda"){
         helpdialog newdiag;
-        //newdiag.setModal(false);
         newdiag.exec();
     }
 

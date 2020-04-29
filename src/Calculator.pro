@@ -17,20 +17,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+    helpdialog.cpp \
     main.cpp \
     ivs.cpp \
     operator.cpp \
     lib/Math.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    helpdialog.cpp
 
 HEADERS += \
+    helpdialog.h \
     ivs.h \
     operator.h \
     lib/Math.h \
-    mainwindow.h
+    mainwindow.h \
+    helpdialog.h
 
 FORMS += \
-    mainwindow.ui
+    helpdialog.ui \
+    mainwindow.ui \
+    helpdialog.ui
 
 DESTDIR = ../build
 OBJECTS_DIR = ../build/
@@ -43,3 +49,6 @@ UI_DIR = ../build/
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    help.qrc
