@@ -1,4 +1,4 @@
-xflekd00 100 (GUI a základní mat. operace, frontend, uživatelská dokumentace, mockupy)
-xklism00 100 (pokročilé mat. operace, frontend)
+xflekd00 100 (GUI a základní mat. operace, GUI, uživatelská dokumentace, mockupy)
+xklism00 100 (pokročilé mat. operace, MVM model kalkulačky, git)
 xsladk09 100 (profiling, matematická knihovna, testy matematické knihovny)
 xsirok09 100 (uživatelska dokumentace, makefile, instalator, doxygen, nastavení projektu)
