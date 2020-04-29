@@ -4,6 +4,7 @@ Maintainer: Ondřej Široký <xsirok09@stud.fit.vutbr.cz>
 Section: math
 Architecture: all
 Priority: optional
+Pre-Depends: libqt5widgets5
 Description: Kalkulátor do předmětu IVS
  Jednoduchý kalkulátor vytvořený do předmětu IVS.
  Autoři:
